@@ -10,15 +10,21 @@ DEBUG=RecipeMVC:* npm start
 
 ## TODO
 
-[ ] Configure project
+[x] Configure project
 ... [x] List port out
 ... [x] Switch from Jade to HBS
 ... [x] Install Bootstrap
-... [ ] Some default messaging
-[ ] Dummy JSON file with bunch-o-recipes
-[ ] List bunch-o-recipes
+... [x] Some default messaging
+[x] Dummy JSON file with bunch-o-recipes
+[x] List bunch-o-recipes
 [ ] Show a single recipe
-
+[ ] Pixel pushing
+Develop 5 realistic recipes: Title, image, ingredients, directions, story
+... [ ] Recipe 1
+... [ ] Recipe 2
+... [ ] Recipe 3
+... [ ] Recipe 4
+... [ ] Recipe 5
 -----
 
 [ ] Add a recipe

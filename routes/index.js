@@ -1,18 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-var recipes = [
-  {
-    id: 1,
-    title: "Meat Balzz"
-  },
-  {
-    id: 2,
-    title: "Organic Boiled Water"
-  },
-];
+// TODO: Replace with database powered model
+// when we go to production
+var recipeSeeds = require('../config/seeds');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  var recipes = recipeSeeds;
   res.render('index', { recipes: recipes });
 });
 
