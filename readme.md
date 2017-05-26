@@ -19,7 +19,7 @@ DEBUG=RecipeMVC:* npm start
 ... [x] Some default messaging
 [x] Dummy JSON file with bunch-o-recipes
 [x] List bunch-o-recipes
-[ ] Show a single recipe
+[x] Show a single recipe
 
 
 ---
