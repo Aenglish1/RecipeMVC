@@ -12,7 +12,8 @@ DEBUG=RecipeMVC:* npm start
 
 [ ] Configure project
 ... [x] List port out
-... [ ] Install Bootstrap
+... [x] Switch from Jade to HBS
+... [x] Install Bootstrap
 ... [ ] Some default messaging
 [ ] Dummy JSON file with bunch-o-recipes
 [ ] List bunch-o-recipes
