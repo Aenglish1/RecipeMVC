@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}✊</p>
+<div class="row">
+  {{#each recipes as |recipe|}}
+    <div class="col-md-4">
+      Yey recipe! {{recipe.title}}
+    </div>
+  {{else}}
+    <div class="col-md-12">j
+      No recipes found!
+    </div>
+  {{/each}}
+</div>
