@@ -8,7 +8,9 @@ To start my app:
 DEBUG=RecipeMVC:* npm start
 ```
 
-## TODO
+## PROJECT TIMELINE
+
+*PM 5/25*
 
 [x] Configure project
 ... [x] List port out
@@ -18,6 +20,12 @@ DEBUG=RecipeMVC:* npm start
 [x] Dummy JSON file with bunch-o-recipes
 [x] List bunch-o-recipes
 [ ] Show a single recipe
+
+
+---
+
+*Lunch 5/26*
+
 [ ] Pixel pushing
 Develop 5 realistic recipes: Title, image, ingredients, directions, story
 ... [ ] Recipe 1
@@ -25,10 +33,13 @@ Develop 5 realistic recipes: Title, image, ingredients, directions, story
 ... [ ] Recipe 3
 ... [ ] Recipe 4
 ... [ ] Recipe 5
+[ ] About Page
+
 -----
+
+*PM 2/26*
 
 [ ] Add a recipe
 [ ] Edit a recipe
 [ ] Delete a recipe
-
 [ ] Use persistence layer (like mongo or postgres)
