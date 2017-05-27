@@ -8,6 +8,12 @@ To start my app for development:
 DEBUG=RecipeMVC:* npm run dev
 ```
 
+To start for production:
+
+```
+npm run prod
+```
+
 ## PROJECT TIMELINE
 
 *PM 5/25*
