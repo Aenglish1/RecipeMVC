@@ -1,7 +1,13 @@
-<h2>{{recipe.title}}</h2>
-<li role="presentation"><a href="/recipes/edit/{{recipe.id}}">Edit Recipe</a></li>
-<li role="presentation">
-  <form method="POST" action="/recipes/{{recipe.id}}?_method=DELETE">
-    <button onclick="return confirm('Are you sure?');" type="submit">Delete Recipe</button>
-  </form>
-</li>
+<div class="clearfix cf">
+  <h2 class="pull-left">{{recipe.title}}</h2>
+  <div class="pull-right" style="padding-top: 24px;">
+    <a class="pull-left" style="padding-right: 13px; padding-top: 2px;" href="/recipes/edit/{{recipe.id}}">Edit Recipe</a>
+    <div class="pull-left" >
+      <form method="POST" action="/recipes/{{recipe.id}}?_method=DELETE">
+        <button onclick="return confirm('Are you sure?');" type="submit">Delete Recipe</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+<img src="http://placehold.it/1200x400?text=Pic of {{recipe.title}}" style="max-width: 100%;"/>
