@@ -25,6 +25,12 @@ Using two different terminal tabs...
 * ... if you add `debug` to the project, the chome tab will catch it and allow
   ... us to inspect the request
 
+## Deployment
+
+To deploy the app:
+1. Be Aaron English
+2. `git push heroku master`
+
 ## PROJECT TIMELINE
 
 *PM 5/25*
