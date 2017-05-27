@@ -21,6 +21,12 @@ router.get('/recipes/new', function(req, res, next) {
   res.render('recipesNew', {});
 });
 
+router.get('/recipes/edit/:id', function(req, res, next) {
+  var recipeId = req.params.id;
+  var recipe = _.find(recipeSeeds, { id: recipeId });
+  res.render('recipesEdit', { recipe: recipe });
+});
+
 router.get('/recipes/:id', function(req, res, next) {
   var recipeId = req.params.id;
   console.log(req.params);
@@ -28,6 +34,20 @@ router.get('/recipes/:id', function(req, res, next) {
   res.render('recipesShow', { recipe: recipe });
 });
 
+// UPDATE
+router.put('/recipes/:id', function(req, res, next) {
+  var recipeAttrs = {
+    id: req.params.id,
+    title: req.body.title
+  };
+  var recipe = _.remove(recipeSeeds, { id: recipeAttrs.id});
+  var updatedRecipe = _.merge(recipe, recipeAttrs);
+  recipeSeeds.push(updatedRecipe);
+
+  res.redirect('/');
+});
+
+// CREATE
 router.post('/recipes', function(req, res, next) {
   var recipeAttrs = {
     id: recipeSeeds.length + 1,
