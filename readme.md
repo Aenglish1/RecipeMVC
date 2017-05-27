@@ -2,10 +2,10 @@
 
 My Demo recipe app for code school
 
-To start my app:
+To start my app for development:
 
 ```
-DEBUG=RecipeMVC:* npm start
+DEBUG=RecipeMVC:* npm run dev
 ```
 
 ## PROJECT TIMELINE
