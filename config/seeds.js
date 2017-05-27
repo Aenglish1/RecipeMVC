@@ -1,7 +1,7 @@
 module.exports = [
   {
     id: "1",
-    title: "Meat Balzz"
+    title: "Swedish Meatballs"
   },
   {
     id: "2",

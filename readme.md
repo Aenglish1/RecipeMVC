@@ -33,12 +33,13 @@ Develop 5 realistic recipes: Title, image, ingredients, directions, story
 ... [ ] Recipe 3
 ... [ ] Recipe 4
 ... [ ] Recipe 5
-[ ] About Page
+[x] About Page
 
 -----
 
-*PM 2/26*
+*PM 5x/26*
 
+[ ] Install nodemon so we don't lose our sh*t
 [ ] Add a recipe
 [ ] Edit a recipe
 [ ] Delete a recipe

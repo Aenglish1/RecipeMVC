@@ -12,6 +12,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { recipes: recipes });
 });
 
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+  res.render('about', { name: "Aaron H. English"});
+});
+
+
 router.get('/recipes/:id', function(req, res, next) {
   var recipeId = req.params.id;
   console.log(req.params);
