@@ -37,7 +37,7 @@ router.get('/recipes/:id', function(req, res, next) {
 // UPDATE
 router.put('/recipes/:id', function(req, res, next) {
   var recipeAttrs = {
-    id: req.params.id,
+    id: req.params.id + "", // All ID's must be stored as strings right now
     title: req.body.title
   };
   var recipe = _.remove(recipeSeeds, { id: recipeAttrs.id});
@@ -50,7 +50,7 @@ router.put('/recipes/:id', function(req, res, next) {
 // CREATE
 router.post('/recipes', function(req, res, next) {
   var recipeAttrs = {
-    id: recipeSeeds.length + 1,
+    id: recipeSeeds.length + 1 + "", // All ID's must be stored as strings right now
     title: req.body.title
   };
 
