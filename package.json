@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
+    "dev": "nodemon --debug ./bin/www",
+    "debug": "node-debug ./bin/www",
     "prod": "forever ./bin/www"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "node-inspector": "^1.1.1"
   }
 }

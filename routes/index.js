@@ -17,12 +17,26 @@ router.get('/about', function(req, res, next) {
   res.render('about', { name: "Aaron H. English"});
 });
 
+router.get('/recipes/new', function(req, res, next) {
+  res.render('recipesNew', {});
+});
 
 router.get('/recipes/:id', function(req, res, next) {
   var recipeId = req.params.id;
   console.log(req.params);
   var recipe = _.find(recipeSeeds, { id: recipeId });
   res.render('recipesShow', { recipe: recipe });
+});
+
+router.post('/recipes', function(req, res, next) {
+  var recipeAttrs = {
+    id: recipeSeeds.length + 1,
+    title: req.body.title
+  };
+
+  recipeSeeds.push(recipeAttrs);
+
+  res.redirect('/');
 });
 
 module.exports = router;
