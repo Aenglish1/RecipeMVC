@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var _ = require('lodash');
+// TODO: update/remove this when switching to database or growing past 10 seeds
+var latestId = 10;
 
 // TODO: Replace with database powered model
 // when we go to production
@@ -57,8 +59,9 @@ router.delete('/recipes/:id', function(req, res, next) {
 
 // CREATE
 router.post('/recipes', function(req, res, next) {
+
   var recipeAttrs = {
-    id: recipeSeeds.length + 1 + "", // All ID's must be stored as strings right now
+    id: ++latestId + "", // All ID's must be stored as strings right now
     title: req.body.title
   };
 
