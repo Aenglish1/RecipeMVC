@@ -1,2 +1,7 @@
 <h2>{{recipe.title}}</h2>
 <li role="presentation"><a href="/recipes/edit/{{recipe.id}}">Edit Recipe</a></li>
+<li role="presentation">
+  <form method="POST" action="/recipes/{{recipe.id}}?_method=DELETE">
+    <button onclick="return confirm('Are you sure?');" type="submit">Delete Recipe</button>
+  </form>
+</li>

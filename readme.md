@@ -73,8 +73,10 @@ Develop 5 realistic recipes: Title, image, ingredients, directions, story
 
 [x] Add a recipe
 
-[ ] Edit a recipe
+[x] Edit a recipe
 
 [ ] Delete a recipe
 
-[ ] Use persistence layer (like mongo or postgres)
+[ ] Ship to Heroku
+
+~~[ ] Use persistence layer (like mongo or postgres)~~

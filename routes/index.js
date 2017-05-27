@@ -47,6 +47,14 @@ router.put('/recipes/:id', function(req, res, next) {
   res.redirect('/');
 });
 
+// DELETE
+router.delete('/recipes/:id', function(req, res, next) {
+  var recipeId = req.params.id;
+  _.remove(recipeSeeds, { id: recipeId});
+
+  res.redirect('/');
+});
+
 // CREATE
 router.post('/recipes', function(req, res, next) {
   var recipeAttrs = {
