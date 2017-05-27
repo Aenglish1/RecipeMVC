@@ -31,6 +31,11 @@ To deploy the app:
 1. Be Aaron English
 2. `git push heroku master`
 
+### Tricks and tips:
+
+* `heroku open` to open the app in the heroku link
+* `heroku restart` to restart the app and blow away in mem state
+
 ## PROJECT TIMELINE
 
 *PM 5/25*
